@@ -1,0 +1,165 @@
+   /*
+    Name of design: Samaritan Heart Institute
+	Designed/Year: Tomzmedia/2014
+	CSS Document
+    Copyright status: All rights reserved
+    */
+body{ background-color:#fff; margin:0; color:#333; border-top:3px solid #2698d4; font-weight:300; line-height:28px;}
+body, #form-wrapper .text, #form-wrapper #button, #form-wrapper input.text, #form-wrapper textarea.text, #form-wrapper select.text, #ui-datepicker-div{ font:16px 'Open Sans', sans-serif;}
+#slider, #inner-header, #container-blue{ box-shadow:#ddd 1px 0 15px; transition:all 0.3s;}
+#slider:hover, #inner-header:hover, #container-blue:hover{ box-shadow:#ccc 1px 0 15px;}
+ul, li, h1, h2, h3, h4{ margin:0; padding:0; list-style-type:none;}
+img{ border:0 none; vertical-align:middle; max-width:100%; height:auto; width:auto\9; /* ie8 */}
+h1{ color:#0c4da2; font-size:40px; font-weight:800; line-height:44px;}
+h2{ color:#2698d4; font-size:30px; font-weight:800; line-height:34px; margin-bottom:20px;}
+h3{ color:#0c4da2; font-size:20px; font-weight:800; line-height:28px;}
+h4{ color:#666; font-size:16px; font-weight:800; line-height:28px;}
+a, a:hover, #form-wrapper .text{ transition:all 0.3s;}
+hr{ height:1px; border:none; background-color:#eaeaea;}
+
+.row-full{ margin:0 auto; width:100%;}
+.row{ margin:0 auto; width:1200px; display:block;}
+.center{ text-align:center;}
+.clear{ clear:both;}
+
+#header{ height:110px;}
+#logo a{ float:left; width:360px; height:69px; margin-top:25px; background:url(../images/logo.jpg) top left no-repeat; text-indent:-9999px;}
+#nav{ float:right; width:800px; text-align: right;}
+#nav ul{ float:left; width:100%;}
+#nav ul li{ padding-left:3%; display: inline-block;}
+#nav ul li a{ float:left; color:#000; text-decoration:none; padding-top:38px; border-top:6px solid #fff; font-weight: bold;}
+#nav ul li a:hover, #nav ul li .active{ border-top:6px solid #2698d4; color:#2698d4;}
+#nav span.call{ color:#fff; float:right; margin-top:5px; font-weight:800; font-size:18px; background: url(../images/call.gif) top left no-repeat #2698d4; padding:4px 20px 4px 70px;}
+#nav span.call small{ font-size:14px;}
+
+
+#slider{ height:516px; position:relative; border:3px solid #fff;}
+#slides, #inner-header{ position:relative; z-index:100;}
+.slides_container{ width:1200px; height:516px; overflow:hidden; position:relative; display:none;}
+.slides_container li{ width:1200px; height:516px; display:block;}
+#slides .prev, #slides .next{ position:absolute; width:37px; height:37px; display:block; z-index:101; background:url(../images/arrow.png) no-repeat; top:240px; opacity:0.7;}
+#slides .prev:hover, #slides .next:hover{ opacity:1;}
+#slides .prev{ transform:rotate(180deg); left:30px;}
+#slides .next{ right:30px;}
+.pagination{margin:0 auto;}
+.pagination li{ float:left; padding:10px 5px; margin-top:-30px; z-index:120; position:relative;}
+.pagination li a{ float:left; display:block; width:13px; height:13px; text-indent:-9999px; overflow:hidden; background:url(../images/pagination.png) no-repeat right; transition:none;}
+.pagination li.current a{ background-position:left;}
+
+#page-down{ margin:0 auto; width:40px; height:24px;}
+#page-down a{ width:40px; height:24px; margin-top:20px; background:url(../images/page-down.png) top no-repeat; display:block; text-indent:-9999px; transition:none;}
+#page-down a:hover{ background-position:bottom;}
+
+#news{ background:url(../images/news-arrow.png) no-repeat top left #0c4da2; height:36px; color:#fff; overflow:hidden; margin-top:20px;}
+#news:hover{ background:url(../images/news-arrow.png) no-repeat top left #1054ad;}
+#news #news-title{ float:left; width:10%; height:auto; height:32px; padding-top:6px; padding-left:1%;}
+#news .newsticker-jcarousellite{ float:left; width:89%; overflow:hidden;}
+#news .newsticker-jcarousellite ul li{ height:36px; padding-top:5px;}
+
+#big-img{ background:url(../images/big-img.jpg) no-repeat center; background-size:cover; height:734px; margin-top:60px; color:#000;}
+#big-img .row aside{ float:left; width:45%; padding-right:5%; padding-top:50px; line-height:28px;}
+#big-img .row aside + aside{ padding-right:0; padding-left:5%;}
+#big-img .row aside strong{color:#0c4da2;}
+
+.red-but{ background-color:#0c4da2; color:#fff; padding:15px 45px; text-decoration:none; border-radius:6px; font-size:20px;}
+.red-but:hover{ background-color:#2698d4;}
+
+#banner{ background:url(../images/banner.jpg) no-repeat; background-size:cover; margin-top:60px; margin-bottom:60px;}
+#banner aside{ float:left; width:42%; font-size:30px; color:#fff; padding:4%; line-height:38px;}
+#banner aside + aside{ width:46%; padding:4% 4% 4% 0; font-size:16px; line-height:28px;}
+#banner a{ color:#fff;}
+#banner a:hover{ text-decoration:none;}
+
+#container{margin-bottom:60px;}
+#container ul{ margin-top:40px;}
+#container ul li{ background:url(../images/check-bg.png) no-repeat; padding:0 10px 0 38px; line-height:48px; display:inline-block; font-size:26px;}
+#container ul li:hover{ color:#000;}
+
+#container-blue{ background-color:#e6f1ff; border:3px solid #fff; margin-top:60px; margin-bottom:60px;}
+#container-blue aside{ float:left; width:46%; font-size:28px; color:#0c4da2; padding:4%; line-height:38px;}
+#container-blue aside + aside{ width:42%; padding:4% 4% 4% 0; font-size:16px; line-height:28px; color:#000;}
+
+#distance{ background-color:#0c4da2; padding:10px 0; color:#fff; font-size:18px;}
+
+.mapContainer{ width:100%; height:500px; border-top:1px solid #eaeaea;}
+#map_canvas{ width:100%; height:100%;}
+
+#footer{ border-top:1px solid #eaeaea; color:#000; font-size:14px; padding:30px 0;}
+#footer a{ text-decoration:none; color:#000; padding:0 10px; font-size:14px;}
+#footer a:hover{ color:#0c4da2; }
+#footer-logo a{ margin:0 auto; width:300px; height:60px; display:block; background:url(../images/logo.jpg) no-repeat top center; text-indent:-9999px; transition:none;}
+
+/*INNER PAGES*/
+#inner-header{ border:3px solid #fff;}
+#wrapper{ padding:50px 0;}
+#wrapper-left{ float:left; width:63%; margin-right:5%;}
+#wrapper-left article{ margin-bottom:30px; line-height:28px;}
+#wrapper-left article big{ font-size:26px; color:#0c4da2; line-height:36px; margin:10px 0; display:block;}
+#wrapper-left article .red{ background-color:#ec1a25; color:#fff; padding:5px 20px; margin-left:10px; display:inline-block; margin-top:20px;}
+#wrapper-left article strong{ font-weight:bold; color:#666;}
+#wrapper-left article aside{ float:left; width:50%;}
+#wrapper-left article a{ color:#0c4da2;}
+#wrapper-left article a:hover{ text-decoration:none; color:#2698d4;}
+#wrapper-left article ul{ margin:15px 0;}
+#wrapper-left article ul li{ background:url(../images/check-bg-small.png) no-repeat; padding-left:30px; line-height:36px;}
+#wrapper-right{ float:left; width:32%;}
+#wrapper-right #blue-box{ background-color:#0c4da2; color:#fff; padding:7%;}
+#wrapper-right #blue-box h3{ font-size:18px !important; color:#fff !important; line-height:20px !important; margin-bottom:10px;}
+#wrapper-right #blue-box ul li{ background:url(../images/check-bg-small-wht.png) no-repeat; padding-left:30px; line-height:36px;}
+#wrapper-right #red-box{ background:url(../images/red-box.jpg) no-repeat; background-size:cover; padding:7% 0 7% 7%; margin-bottom:30px;}
+#wrapper-right #red-box a{ font-size:30px; color:#fff; text-decoration:none; background:url(../images/arrow.png) no-repeat right; padding:10px 45px 10px 0;}
+#wrapper-right #red-box a:hover{ text-decoration:underline;}
+#wrapper-right .right-image{ margin-top:30px;}
+
+
+/*FORMS*/
+.quote{ background-color:#f8f8f8; padding:5%; margin:0;}
+#form-wrapper{ margin:0 0 50px 0;}
+#form-wrapper .text{ border:1px solid #ccc; background-color:#fff; width:96%; padding:2%; margin-bottom:2%;}
+#form-wrapper .text:hover{ border:1px solid #3b76c4;}
+#form-wrapper #button, #submit_btn,#quote_submit_btn{ background-color:#0c4da2; padding:10px 40px; color:#fff; cursor:pointer; border:none; font-size: 20px; border-radius:5px;}
+#form-wrapper #button:hover, #submit_btn:hover, #appnt_submit_btn:hover{ background-color:#2698d4;}
+#form-wrapper p{ margin:8px 0;}
+#form-wrapper p span{ float:left; width:48%;}
+#form-wrapper p span + span{ margin-left:4%;}
+#form-wrapper input.text1{ padding:2.3% 2%;}
+#form-wrapper select.text{ width:100%; padding:2%;}
+#form-wrapper i.req{ font-style:normal;}
+
+
+#contact_form, #quote_form{ border:none;}
+
+.success{
+	background: #CFFFF5;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #B9ECCE;
+	border-radius: 5px;
+	font-weight: normal;
+}
+.error{
+	background: #FFDFDF;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #FFCACA;
+	border-radius: 5px;
+	font-weight: normal;
+}
+
+
+
+
+
+
+    @media screen and (max-width:1250px) {
+	.row{ width:85%;}
+	h1{ font-size:36px; line-height:40px;}
+	#slider{ height:400px; overflow:hidden;}
+	#slides{ width:100%;}	
+	#slides .prev, #slides .next{ top:200px;}	
+	}
+	
+	@media screen and (max-width:800px) {	
+	#wrapper-left{ float:none; width:100%; margin-right:0%;}
+	#wrapper-right{ float:none; width:100%;}
+	}
